@@ -67,3 +67,49 @@ body {
   margin-right: -157px;
   margin-top: -50px;
 }
+.myCarousel img {
+  /* height: 603px; */
+  object-fit: cover;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+}
+.mySlide {
+  margin-top: 50px;
+}
+.content-section {
+  margin-top: 230px;
+  padding: 50px;
+  text-align: center;
+}
+
+.content-section p {
+  color: #000;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+}
+.best-known {
+  padding: 100px 150px;
+  text-align: center;
+}
+
+.best-known h1 {
+  color: #000;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.best-known p {
+  color: #000;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
