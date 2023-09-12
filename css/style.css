@@ -307,3 +307,27 @@ footer {
   font-weight: 400;
   line-height: normal;
 }
+.footer-border {
+  border-bottom: 1px solid #fff;
+  margin-top: 40px;
+}
+.footer-copyright {
+  margin-top: 20px;
+}
+.page-logo span i {
+  font-size: 35px;
+  padding: 0 6px;
+}
+.page-logo {
+  float: right;
+  justify-content: right;
+  display: flex;
+}
+.footer-copyright p {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
