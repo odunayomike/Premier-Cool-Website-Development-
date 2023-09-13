@@ -37,6 +37,13 @@ body {
   color: #273e9b;
   font-weight: 700;
 }
+.navbar {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    transition: top 0.7s ease-in-out;
+    z-index: 1000;
+}
 
 .img-silder {
   background: #000;
@@ -739,4 +746,14 @@ li[data-pos="2"]::after {
 }
 .z-soap {
   margin-bottom: 50px;
+}
+
+
+
+/* --------- MOBILE OPTIMIZATION -------------- */
+
+@media screen and(max-width: 480px){
+  .myNavbar {
+    display: none;
+  }
 }

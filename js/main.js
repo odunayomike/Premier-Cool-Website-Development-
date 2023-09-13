@@ -1,3 +1,13 @@
+// STICKY NAVBAR
+window.addEventListener("scroll", () => {
+  const navbar = document.getElementById("sticky-navbar");
+  if (window.scrollY > 100) {
+    navbar.style.top = "0";
+  } else {
+    navbar.style.top = "-80px"; // Adjust the value as needed
+  }
+});
+
 const divItems = document.querySelectorAll(".soapslider-inner");
 const dots = document.querySelectorAll(".dot");
 let currentIndex = 0;
