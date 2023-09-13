@@ -26,7 +26,49 @@ dots.forEach((dot, index) => {
   });
 });
 
-showDiv(currentIndex); // Show the initial div
+showDiv(currentIndex);
+setInterval(switchDivs, 5000);
 
-// Start the switching process
-setInterval(switchDivs, 5000); // Switch every 5 seconds
+// IMG VIDEO CAROUSEL
+
+const scrollContainers = document.querySelectorAll("#infiniteScroll--left");
+
+scrollContainers.forEach((container) => {
+  const scrollWidth = container.scrollWidth;
+  let isScrollingPaused = false;
+
+  window.addEventListener("load", () => {
+    self.setInterval(() => {
+      if (isScrollingPaused) {
+        return;
+      }
+      const first = container.querySelector(".wrapper");
+
+      if (!isElementInViewport(first)) {
+        container.appendChild(first);
+        container.scrollTo(container.scrollLeft - first.offsetWidth, 0);
+      }
+      if (container.scrollLeft !== scrollWidth) {
+        container.scrollTo(container.scrollLeft + 1, 0);
+      }
+    }, 15);
+  });
+
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return rect.right > 0;
+  }
+
+  function pauseScrolling() {
+    isScrollingPaused = true;
+  }
+
+  function resumeScrolling() {
+    isScrollingPaused = false;
+  }
+  const allArticles = container.querySelectorAll(".wrapper");
+  for (let article of allArticles) {
+    article.addEventListener("mouseenter", pauseScrolling);
+    article.addEventListener("mouseleave", resumeScrolling);
+  }
+});
