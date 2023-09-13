@@ -1,12 +1,22 @@
 // STICKY NAVBAR
+let prevScrollPos = window.pageYOffset;
+
 window.addEventListener("scroll", () => {
   const navbar = document.getElementById("sticky-navbar");
-  if (window.scrollY > 100) {
+  const currentScrollPos = window.pageYOffset;
+
+  if (currentScrollPos > 100) {
     navbar.style.top = "0";
   } else {
-    navbar.style.top = "-80px"; // Adjust the value as needed
+    navbar.style.top = "-80px";
   }
+  if (currentScrollPos < prevScrollPos) {
+    navbar.style.top = "0";
+  }
+
+  prevScrollPos = currentScrollPos;
 });
+
 
 const divItems = document.querySelectorAll(".soapslider-inner");
 const dots = document.querySelectorAll(".dot");
