@@ -1,12 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 body {
   font-family: "Mulish", sans-serif;
   max-width: 100%;
 
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 .search {
   display: flex;
@@ -355,7 +356,7 @@ footer {
   font-weight: 400;
   line-height: 30px; /* 150% */
 }
-.imd-banner img{
+.imd-banner img {
   width: 100%;
 }
 .scroll-disabler {
@@ -531,7 +532,7 @@ iframe {
   font-weight: 600;
   line-height: normal;
 }
-.other-page-footer-form  {
+.other-page-footer-form {
   margin-bottom: 100px;
 }
 
@@ -547,4 +548,195 @@ iframe {
   margin-top: -200px;
   margin-left: 100px;
   position: absolute;
+}
+.product-banner-text {
+  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  margin-top: -400px;
+  padding: 0 300px;
+}
+.product-banner-text h1 {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.product-banner-text span {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+
+.product-banner img {
+  max-width: 100%;
+}
+/* -------------- PRODUCT SLIDER --------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.caroulsell {
+  height: 100vh;
+  /* display: grid; */
+  place-items: center;
+}
+
+.caroulsell-list {
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.caroulsell-item {
+  position: absolute;
+  width: 450px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  /* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5); */
+  transition: transform 500ms;
+  cursor: pointer;
+}
+
+.caroulsell-item::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.caroulsell-item:nth-of-type(1) {
+  background-image: url(../img/blue.svg);
+}
+.caroulsell-item:nth-of-type(2) {
+  background-image: url(../img/black.svg);
+}
+.caroulsell-item:nth-of-type(3) {
+  background-image: url(../img/redsoap.svg);
+}
+.caroulsell-item:nth-of-type(4) {
+  background-image: url(../img/yellowsoap.svg);
+}
+
+li[data-pos="0"] {
+  z-index: 9;
+}
+li[data-pos="-1"],
+li[data-pos="1"] {
+  z-index: 6;
+}
+li[data-pos="-2"],
+li[data-pos="2"] {
+  z-index: 3;
+}
+
+li[data-pos="-1"] {
+  transform: translateX(-50%) scale(0.9);
+}
+li[data-pos="1"] {
+  transform: translateX(50%) scale(0.9);
+}
+li[data-pos="-2"] {
+  transform: translateX(-90%) scale(0.8);
+}
+li[data-pos="2"] {
+  transform: translateX(90%) scale(0.8);
+}
+
+li[data-pos="-1"]::after,
+li[data-pos="1"]::after {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+li[data-pos="-2"]::after,
+li[data-pos="2"]::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.product-caroulsell {
+  margin-top: -150px;
+  height: 300px;
+}
+.blue-soap {
+  background: #fff;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
+  max-width: 100%;
+  justify-content: center;
+  margin: auto;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-right: 100px
+}
+.blue-soap-inner h1 {
+  color: #000;
+  font-family: Mulish;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.blue-soap-inner p {
+  color: #000;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+.blue-soap-inner button {
+  border-radius: 31.5px;
+  background: #273e9b;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 30px;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 40px;
+}
+.blue-soap-inner {
+  margin-right: 100px;
+}
+
+.black-soap {
+  
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
+  max-width: 100%;
+  justify-content: center;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin: auto;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.black-soap-inner img{
+  margin-left: 30px;
+}
+.x-soap {
+  margin-left: 50px;
+  width: 800px;
+}
+.soap-img {
+  margin-top: 20px;
+}
+.y-soap {
+  margin-top: 50px;
+}
+.z-soap {
+  margin-bottom: 50px;
 }

@@ -72,3 +72,22 @@ scrollContainers.forEach((container) => {
     article.addEventListener("mouseleave", resumeScrolling);
   }
 });
+
+const caroulsell = document.querySelector(".caroulsell");
+const items = document.querySelectorAll(".caroulsell-item");
+
+function position(current, active) {
+  const diff = current - active;
+  return Math.abs(diff) > 2 ? -current : diff;
+}
+
+function update(active) {
+  const activePos = active.dataset.pos;
+  for (const item of items) {
+    item.dataset.pos = position(item.dataset.pos, activePos);
+  }
+}
+
+const init = (e) => e.target.matches(".caroulsell-item") && update(e.target);
+
+caroulsell.addEventListener("click", init, false);
