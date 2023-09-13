@@ -335,7 +335,7 @@ footer {
 /* ----------------------- IMD PAGE ------------------ */
 .hey-guys {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .hey-guys h1 {
@@ -377,7 +377,7 @@ footer {
   background-color: #fff;
   border-radius: 15px;
   border: 1px solid #d4d4d4;
-  margin: 20px 10px;
+  margin: 0 10px;
 }
 iframe {
   width: 100% !important;
@@ -533,4 +533,18 @@ iframe {
 }
 .other-page-footer-form  {
   margin-bottom: 100px;
+}
+
+.first-vector {
+  position: absolute;
+  margin-top: -50px;
+}
+.vector2 {
+  margin-top: -246px;
+  margin-left: 220px;
+}
+.star-vector {
+  margin-top: -200px;
+  margin-left: 100px;
+  position: absolute;
 }
