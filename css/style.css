@@ -753,7 +753,15 @@ li[data-pos="2"]::after {
   border: none;
   font-size: 40px;
 }
-.mobile-menu li a {
+.mobile-search {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+.mobile-search-form input[type="search"] {
+  border: 0 0 2px 0;
+}
+.mobile-menu a {
   text-decoration: none;
   color: #000;
   font-family: Inter;
@@ -761,10 +769,26 @@ li[data-pos="2"]::after {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 40px 10px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  transform: translateY(-20px); /* Move them up */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
-
+.mobile-menu {
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  transition: right 0.7s ease-in-out;
+}
+.mobile-menu-off {
+  display: none !important;
+}
 @media screen and (max-width: 480px) {
+  body {
+    max-width: 100%;
+    overflow-x: hiiden;
+  }
   .myNavbar {
     display: none;
   }

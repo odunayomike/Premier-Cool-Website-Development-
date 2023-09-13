@@ -17,6 +17,26 @@ window.addEventListener("scroll", () => {
   prevScrollPos = currentScrollPos;
 });
 
+const mobile_menu_btn = document.querySelector(".mobile-menu-btn");
+const mobile_menu = document.querySelector(".mobile-menu");
+const navbar_brand = document.querySelector(".navbar-brand");
+const myNavbar = document.querySelector(".myNavbar");
+const search = document.querySelector(".search");
+const mobile_search = document.querySelector(".mobile-search");
+mobile_menu_btn.addEventListener ("click", ()=>{
+  if (mobile_menu.classList.contains("mobile-menu-off")) {
+    mobile_menu.classList.remove("mobile-menu-off");
+    mobile_search.classList.remove("mobile-menu-off");
+    navbar_brand.classList.add("mobile-menu-off");
+    myNavbar.classList.add("mobile-menu-off");
+    search.classList.add("mobile-menu-off");
+    mobile_menu_btn.classList.add("mobile-menu-off")
+  }else {
+    mobile_menu.classList.add("mobile-menu-off");
+  }
+})
+
+
 
 const divItems = document.querySelectorAll(".soapslider-inner");
 const dots = document.querySelectorAll(".dot");
