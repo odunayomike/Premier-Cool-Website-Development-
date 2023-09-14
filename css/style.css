@@ -759,7 +759,10 @@ li[data-pos="2"]::after {
   padding: 10px 30px;
 }
 .mobile-search-form input[type="search"] {
-  border: 0 0 2px 0;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 6px 15px;
+  background: transparent;
 }
 .mobile-menu a {
   text-decoration: none;
@@ -794,6 +797,9 @@ li[data-pos="2"]::after {
   }
   .search {
     display: none;
+  }
+  .row{
+    flex-direction: column !important;
   }
 }
 @media screen and (min-width: 940px) {
