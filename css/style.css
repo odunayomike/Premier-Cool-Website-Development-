@@ -791,6 +791,7 @@ li[data-pos="2"]::after {
 }
 .contact-banner-text {
   margin-top: -190px !important;
+  
 }
 @media screen and (max-width: 780px) {
   body {
