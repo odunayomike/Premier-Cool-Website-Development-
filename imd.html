@@ -24,6 +24,10 @@
   </head>
   <body>
     <style>
+      body {
+        max-width: 100%;
+        overflow-x: hidden !important;
+      }
       .container {
         overflow-x: scroll;
         display: flex;
@@ -59,7 +63,10 @@
         </div>
       </div>
       <div>
-        <div class="mobile-search mobile-menu-off">
+        <div
+          style="max-width: 100%; width: 780px"
+          class="mobile-search mobile-menu-off"
+        >
           <div>
             <form class="mobile-search-form" action="">
               <i class="bi bi-search"></i>
@@ -71,16 +78,16 @@
               />
             </form>
           </div>
-          <div>
+          <div class="mobile-menu-close">
             <button>
               <i class="bi bi-x-lg"></i>
             </button>
           </div>
         </div>
-        <div style="" class="mobile-menu mobile-menu-off">
+        <div style="margin-top: 20px" class="mobile-menu mobile-menu-off">
           <a href="/">Home</a>
           <a href="/product.html">Product</a>
-          <a href="/imd.html">IMD</a>
+          <a class="active" href="/imd.html">IMD</a>
           <a href="">About Us</a>
           <a href="">Contact</a>
         </div>
@@ -90,6 +97,9 @@
     <div class="imd-body">
       <div class="imd-banner">
         <img src="img/imd-man.svg" alt="" />
+      </div>
+      <div class="imd-banner-mobile">
+        <img src="img/imdbannermobile.svg" alt="" />
       </div>
       <div class="hey-guys">
         <h1>Hey guys, share the pressure.</h1>
@@ -110,7 +120,7 @@
 
       <div
         style="margin-top: 50px; z-index: 999; position: relative"
-        class="container"
+        class="container imd-container"
         id="infiniteScroll--left"
       >
         <div>
@@ -268,8 +278,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col col-6" style="">
+      <div class="row footer">
+        <div class="col col-6 first-footer-sec" style="">
           <div class="footer-logo" style="">
             <img src="img/logo.svg" alt="" />
             <p>
@@ -278,21 +288,21 @@
             </p>
           </div>
         </div>
-        <div class="col">
+        <div class="col-4 col-sm-2 footer-mobile">
           <h3>Socials</h3>
           <p>Facebook</p>
           <p>Instagram</p>
           <p>Youtube</p>
           <p>X</p>
         </div>
-        <div class="col">
+        <div class="col-4 col-sm-2 footer-mobile">
           <h3>Products</h3>
           <p>Ultimate</p>
           <p>Black</p>
           <p>Odour Defence</p>
           <p>Sport</p>
         </div>
-        <div class="col">
+        <div class="col-4 col-sm-2 footer-mobile">
           <h3>Legal</h3>
           <p>Terms</p>
           <p>Privacy</p>
@@ -301,8 +311,8 @@
       </div>
       <div class="footer-border"></div>
       <div class="footer-copyright">
-        <div class="row">
-          <div class="col col-6">
+        <div class="row footer-copy-row">
+          <div class="col col-6 footer-copy-text">
             <p>@2023 Premier Cool. All rights reserved.</p>
           </div>
           <div class="col col-6 page-logo">

@@ -24,7 +24,7 @@
   </head>
   <body>
     <nav class="navbar bg-body-tertiary" id="sticky-navbar">
-      <div class="container">
+      <div class="container"> 
         <a class="navbar-brand" href="#">
           <img src="img/logo.svg" alt="Bootstrap" width="80" height="" />
         </a>
@@ -52,8 +52,8 @@
         </div>
       </div>
 
-      <div>
-        <div class="mobile-search mobile-menu-off">
+      
+        <div style="max-width: 100%; width: inherit;"  class="mobile-search mobile-menu-off">
           <div>
             <form class="mobile-search-form" action="">
               <i class="bi bi-search"></i>
@@ -65,14 +65,14 @@
               />
             </form>
           </div>
-          <div>
+          <div class="mobile-menu-close">
             <button>
               <i class="bi bi-x-lg"></i>
             </button>
           </div>
         </div>
-        <div style="" class="mobile-menu mobile-menu-off">
-          <a href="/">Home</a>
+        <div style="margin-top: 20px;" class="mobile-menu mobile-menu-off">
+          <a class="active" href="/">Home</a>
           <a href="/product.html">Product</a>
           <a href="/imd.html">IMD</a>
           <a href="">About Us</a>
@@ -146,8 +146,8 @@
       </div>
     </div>
     <div class="row qualities">
-      <div class="col">
-        <div class="col-12 safe">
+      <div class="col-6 col-sm-3">
+        <div class="safe">
           <img src="img/shield.svg" alt="" />
           <h1>100% Safe</h1>
           <p>
@@ -156,8 +156,8 @@
           </p>
         </div>
       </div>
-      <div class="col">
-        <div class="col-12 safe">
+      <div class="col-6 col-sm-3">
+        <div class="safe">
           <img src="img/skin.svg" alt="" />
           <h1>100% Safe</h1>
           <p>
@@ -166,8 +166,8 @@
           </p>
         </div>
       </div>
-      <div class="col">
-        <div class="col-12 safe">
+      <div class="col-6 col-sm-3">
+        <div class="safe">
           <img src="img/leaf.svg" alt="" />
           <h1>100% Safe</h1>
           <p>
@@ -176,8 +176,8 @@
           </p>
         </div>
       </div>
-      <div class="col">
-        <div class="col-12 safe">
+      <div class="col-6 col-sm-3">
+        <div class="safe">
           <img src="img/fresh.svg" alt="" />
           <h1>100% Safe</h1>
           <p>
@@ -286,7 +286,7 @@
             </p>
           </div>
         </div>
-        <div class="col">
+        <div class="col home-video">
           <iframe
             width="560"
             height="315"
@@ -301,8 +301,8 @@
     </div>
 
     <div class="newsletter">
-      <div class="row">
-        <div class="col" style="max-width: 15%">
+      <div class="row newsletter-inner">
+        <div class="col col-news-inner" style="max-width: 15%">
           <div class="col-12">
             <img src="img/mailbox.svg" alt="" />
           </div>
@@ -313,21 +313,21 @@
             >Join the Premier Cool family! The best way to keep in touch with
             our products and latest news.</span
           >
-          <form class="newsletter-form" action="">
-            <input
-              type="email"
-              class=""
-              style="width: 87%"
-              placeholder="Enter your email "
-            />
-            <input type="button" value="Subscribe" />
-          </form>
         </div>
+        <form class="newsletter-form" action="">
+          <input
+            type="email"
+            class=""
+            style="width: 87%"
+            placeholder="Enter your email "
+          />
+          <input type="button" value="Subscribe" />
+        </form>
       </div>
     </div>
     <footer>
-      <div class="row">
-        <div class="col col-6" style="">
+      <div class="row footer">
+        <div class="col col-6 first-footer-sec" style="">
           <div class="footer-logo" style="">
             <img src="img/logo.svg" alt="" />
             <p>
@@ -336,21 +336,21 @@
             </p>
           </div>
         </div>
-        <div class="col">
+        <div class="col-4 col-sm-2 footer-mobile">
           <h3>Socials</h3>
           <p>Facebook</p>
           <p>Instagram</p>
           <p>Youtube</p>
           <p>X</p>
         </div>
-        <div class="col">
+        <div class="col-4 col-sm-2 footer-mobile">
           <h3>Products</h3>
           <p>Ultimate</p>
           <p>Black</p>
           <p>Odour Defence</p>
           <p>Sport</p>
         </div>
-        <div class="col">
+        <div class="col-4 col-sm-2 footer-mobile">
           <h3>Legal</h3>
           <p>Terms</p>
           <p>Privacy</p>
@@ -359,8 +359,8 @@
       </div>
       <div class="footer-border"></div>
       <div class="footer-copyright">
-        <div class="row">
-          <div class="col col-6">
+        <div class="row footer-copy-row">
+          <div class="col col-6  footer-copy-text">
             <p>@2023 Premier Cool. All rights reserved.</p>
           </div>
           <div class="col col-6 page-logo">
