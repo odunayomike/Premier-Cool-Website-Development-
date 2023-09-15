@@ -1240,6 +1240,9 @@ li[data-pos="2"]::after {
   .blue-soap-inner button {
     margin-left: 0;
   }
+  .contact-banner-text {
+    margin-top: -190;
+  }
 }
 @media screen and (min-width: 1024px) {
   .mobile-menu-btn {
