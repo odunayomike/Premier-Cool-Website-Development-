@@ -789,6 +789,9 @@ li[data-pos="2"]::after {
 .mobile-menu-off {
   display: none !important;
 }
+.contact-banner-text {
+  margin-top: -190px !important;
+}
 @media screen and (max-width: 780px) {
   body {
     max-width: 100% !important;
@@ -850,7 +853,6 @@ li[data-pos="2"]::after {
   .content-section {
     margin-top: 100px;
     padding: 0 10px;
-    
   }
   .content-section p {
     color: #000;
@@ -860,7 +862,6 @@ li[data-pos="2"]::after {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
   }
   .content-section h1 {
     color: #000;
@@ -1210,7 +1211,6 @@ li[data-pos="2"]::after {
   }
   .x-soap img {
     width: 100%;
-    
   }
   .blue-soap {
     width: 90%;
@@ -1239,9 +1239,6 @@ li[data-pos="2"]::after {
   }
   .blue-soap-inner button {
     margin-left: 0;
-  }
-  .contact-banner-text {
-    margin-top: -190;
   }
 }
 @media screen and (min-width: 1024px) {
