@@ -736,6 +736,7 @@ li[data-pos="2"]::after {
 .x-soap {
   margin-left: 50px;
   width: 800px;
+  display: flex;
 }
 .soap-img {
   margin-top: 20px;
@@ -1107,9 +1108,10 @@ li[data-pos="2"]::after {
     font-weight: 400;
     line-height: normal;
   }
-  .footer {
-    margin-top: -50px;
+  .other-footer-form {
+    margin-bottom: -80px !important;
   }
+
   .hey-guys h1 {
     color: #000;
     text-align: center;
@@ -1140,9 +1142,8 @@ li[data-pos="2"]::after {
     font-weight: 700;
     line-height: normal;
     width: fit-content;
-
   }
-  .imd-text-p  p {
+  .imd-text-p p {
     color: #545454;
     font-family: Mulish;
     font-size: 13px;
@@ -1150,6 +1151,75 @@ li[data-pos="2"]::after {
     font-weight: 400;
     line-height: normal;
     width: fit-content;
+  }
+  .product-caroulsell {
+    display: none;
+  }
+  .product-banner {
+    display: none;
+  }
+  .product-banner-mobile img {
+    margin-top: 75px;
+    max-width: 780px;
+    width: 100%;
+  }
+  .product-banner-text h1 {
+    color: #fff;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .product-banner-text {
+    margin-top: -200px;
+    padding: 15px;
+  }
+  .product-banner-text span {
+    color: #fff;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .blue-soap-inner h1 {
+    color: #000;
+    font-family: Mulish;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .blue-soap-inner p {
+    color: #000;
+    font-family: Mulish;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .x-soap {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .x-soap img {
+    width: 100%;
+  }
+  .blue-soap {
+    width: 90%;
+  }
+  .black-soap {
+    width: 90%;
+    margin-left: 40px;
+    display: flex;
+  }
+  .black-soap-inner img {
+    margin-left: 0;
+  }
+  .blue-soap-inner:nth-child(2) {
+    order: 1;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1160,6 +1230,9 @@ li[data-pos="2"]::after {
     display: none;
   }
   .imd-banner-mobile {
+    display: none;
+  }
+  .product-banner-mobile {
     display: none;
   }
 }
