@@ -715,6 +715,7 @@ li[data-pos="2"]::after {
   border-radius: 30px;
   border: none;
   padding: 15px 40px;
+  margin-left: 50px;
 }
 .blue-soap-inner {
   margin-right: 100px;
@@ -1235,6 +1236,9 @@ li[data-pos="2"]::after {
 
   .blue-soap .x-soap > div {
     order: 2;
+  }
+  .blue-soap-inner button {
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1024px) {
