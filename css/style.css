@@ -53,7 +53,7 @@ body {
 }
 .header-text {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 .header-text h1 {
   color: #fff;
@@ -831,6 +831,9 @@ li[data-pos="2"]::after {
   margin-top: 70px;
   margin-bottom: 80px;
 }
+.faq-container {
+  margin-top: 30px;
+}
 .faq-divider {
   border-bottom: 1px solid #d4d4d4;
   margin-top: 20px;
@@ -857,6 +860,10 @@ li[data-pos="2"]::after {
 .faq-content-first-part img {
   width: 35px;
   cursor: pointer;
+}
+.faq-content-first-part button {
+  background: none;
+  border: none;
 }
 .faq-content-second-part p {
   color: #000;
@@ -923,6 +930,7 @@ li[data-pos="2"]::after {
   .header-text h1 {
     font-size: 20px;
   }
+  
   .header-text p {
     font-size: 12px;
     line-height: normal;
