@@ -827,7 +827,11 @@ li[data-pos="2"]::after {
   line-height: normal;
   padding: 10px;
 }
-
+.faq-divider{
+  border-bottom: 1px solid #D4D4D4;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 @media screen and (max-width: 780px) {
   body {
     max-width: 100% !important;
