@@ -854,10 +854,9 @@ li[data-pos="2"]::after {
   display: flex;
   justify-content: space-between;
 }
-.faq-content-first-part i {
-  font-size: 20px;
-  font-weight: 800;
-  color: #000;
+.faq-content-first-part img {
+  width: 35px;
+  cursor: pointer;
 }
 .faq-content-second-part p {
   color: #000;
