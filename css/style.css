@@ -827,10 +827,59 @@ li[data-pos="2"]::after {
   line-height: normal;
   padding: 10px;
 }
-.faq-divider{
-  border-bottom: 1px solid #D4D4D4;
+.faq {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+.faq-divider {
+  border-bottom: 1px solid #d4d4d4;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+.faq-content {
+  border-radius: 12px;
+  background: #f5f5f5;
+  padding: 10px 25px;
+  margin-bottom: 20px;
+}
+.faq-content-first-part h1 {
+  color: #000;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.faq-content-first-part {
+  display: flex;
+  justify-content: space-between;
+}
+.faq-content-first-part i {
+  font-size: 20px;
+  font-weight: 800;
+  color: #000;
+}
+.faq-content-second-part p {
+  color: #000;
+  font-family: Mulish;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 160% */
+}
+.faq-content-second-part {
+  display: none;
+}
+.faq-header h1 {
+  color: #000;
+  font-family: Mulish;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.faq-active {
+  display: block;
 }
 @media screen and (max-width: 780px) {
   body {
