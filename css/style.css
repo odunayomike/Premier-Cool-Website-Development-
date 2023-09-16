@@ -930,7 +930,7 @@ li[data-pos="2"]::after {
   .header-text h1 {
     font-size: 20px;
   }
-  
+
   .header-text p {
     font-size: 12px;
     line-height: normal;
@@ -1335,6 +1335,68 @@ li[data-pos="2"]::after {
   }
   .blue-soap-inner button {
     margin-left: 0;
+  }
+  .faq-container-row {
+    justify-content: center;
+    margin: auto;
+  }
+  .contact-channel {
+    margin-bottom: 6px;
+  }
+  .contact-channel h1 {
+    color: #000;
+    font-family: Mulish;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .contact-channel p {
+    color: #000;
+    font-family: Mulish;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 153.846% */
+  }
+  .contact-channel button {
+    color: #273e9b;
+    font-family: Mulish;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .contact-channel button i {
+    margin-right: 3px;
+  }
+  .faq-row {
+    justify-content: center;
+    margin: auto;
+  }
+  .faq-header h1 {
+    color: #000;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .faq-content-first-part h1 {
+    color: #000;
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .faq-content-second-part p {
+    color: #000;
+    font-family: Mulish;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 153.846% */
   }
 }
 @media screen and (min-width: 1024px) {
