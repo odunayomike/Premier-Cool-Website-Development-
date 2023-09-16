@@ -887,6 +887,9 @@ li[data-pos="2"]::after {
 .faq-active {
   display: block;
 }
+.contact-channel button i {
+  margin-right: 6px;
+}
 @media screen and (max-width: 780px) {
   body {
     max-width: 100% !important;
