@@ -1040,10 +1040,18 @@ li[data-pos="2"]::after {
 .aboutbannermobile {
   display: none;
 }
-@media screen and (max-width: 780px) {
+.blue-soap-inner-inner {
+  margin-left: 50px;
+  margin-top: -60px;
+}
+@media screen and (max-width: 940px) {
   body {
     max-width: 100% !important;
     overflow-x: hidden !important;
+  }
+  .blue-soap-inner-inner {
+    margin-left: 0;
+    margin-top: 0;
   }
   .aboutbanner {
     display: none;
@@ -1157,11 +1165,11 @@ li[data-pos="2"]::after {
   .header-text {
     text-align: center;
     padding-top: 50px;
-}
-  .last-about-text p{
+  }
+  .last-about-text p {
     display: none;
   }
-  .last-last-about-text p{
+  .last-last-about-text p {
     display: none;
   }
   .second-about-img {
