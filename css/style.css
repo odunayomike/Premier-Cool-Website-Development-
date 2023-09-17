@@ -566,6 +566,7 @@ iframe {
   width: 100%;
   margin-top: -400px;
   padding: 0 300px;
+  z-index: 10;
 }
 .product-banner-text h1 {
   color: #fff;
@@ -588,6 +589,28 @@ iframe {
 .product-banner img {
   max-width: 100%;
   width: 100%;
+  z-index: 2;
+}
+.product-banner {
+  position: relative; /* Required for positioning the pseudo-element */
+  display: inline-block;
+}
+.product-banner::before {
+  content: ""; /* Required for the pseudo-element to be generated */
+  position: absolute; /* Position it absolutely within the container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire container */
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the opacity by changing the last value (0.5 in this case) */
+  z-index: 1; /* Place it above the image */
+  opacity: 1; /* Initially make it fully transparent */
+  transition: opacity 0.3s ease; /* Add a transition effect for opacity change */
 }
 /* -------------- PRODUCT SLIDER --------------- */
 
@@ -1561,6 +1584,7 @@ li[data-pos="2"]::after {
   .product-banner-text {
     margin-top: -200px;
     padding: 15px;
+    z-index: 10;
   }
   .product-banner-text span {
     color: #fff;
