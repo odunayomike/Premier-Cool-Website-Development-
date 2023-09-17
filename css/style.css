@@ -1044,6 +1044,9 @@ li[data-pos="2"]::after {
   margin-left: 50px;
   margin-top: -60px;
 }
+.safe img {
+  margin-bottom: 15px;
+}
 @media screen and (max-width: 940px) {
   body {
     max-width: 100% !important;
