@@ -90,7 +90,7 @@ body {
   margin-top: 50px;
 }
 .content-section {
-  margin-top: 230px;
+  margin-top: 350px;
   padding: 50px 50px 0 50px;
   text-align: center;
 }
@@ -587,6 +587,7 @@ iframe {
 
 .product-banner img {
   max-width: 100%;
+  width: 100%;
 }
 /* -------------- PRODUCT SLIDER --------------- */
 
@@ -715,7 +716,7 @@ li[data-pos="2"]::after {
   border-radius: 30px;
   border: none;
   padding: 15px 40px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 .blue-soap-inner {
   margin-right: 100px;
@@ -889,6 +890,140 @@ li[data-pos="2"]::after {
 }
 .contact-channel button i {
   margin-right: 6px;
+}
+.aboutbanner img {
+  margin-top: 65px;
+  width: 100%;
+  max-width: 100%;
+}
+.text-below-banner {
+  text-align: center;
+  margin: 50px 70px 0 70px;
+}
+.text-below-banner p {
+  color: #000;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+.dedication-text h1 {
+  color: #000;
+  font-family: Mulish;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 50px;
+}
+.dedication-text p {
+  color: #000;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+.about-img {
+  margin-top: 50px;
+}
+.second-about-img {
+  margin-top: 150px;
+}
+.second-about-img img {
+  margin-left: 50px;
+  width: 100%;
+  max-width: 100%;
+}
+.about-slug {
+  margin: 100px 0;
+}
+.about-slug h1 {
+  color: #000;
+  font-family: Mulish;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: -25px;
+  margin-top: 15px;
+}
+.about-slug p {
+  color: #000;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  width: 50%;
+  margin: 0 150px;
+}
+.for-everyone {
+  display: flex;
+  margin: 0 80px;
+}
+.premier-soap {
+  text-align: center;
+}
+.journey {
+  text-align: center;
+  margin-top: 50px;
+}
+.journey h1 {
+  color: #000;
+  font-family: Mulish;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.journey p {
+  color: #000;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+}
+.journey img {
+}
+.last-about-text {
+  text-align: center;
+}
+.last-last-about-text {
+  text-align: center;
+}
+.last-about-text p {
+  color: #000;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+.last-last-about-text p {
+  color: #000;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
 @media screen and (max-width: 780px) {
   body {
