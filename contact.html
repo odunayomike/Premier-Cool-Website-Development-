@@ -255,36 +255,45 @@
         </div>
     </footer>
     <script>
-        // Get all FAQ buttons and content
-        const faqButtons = document.querySelectorAll('.faq-content-first-part button');
-        const faqContents = document.querySelectorAll('.faq-content-second-part');
+    // Get all FAQ buttons and content
+    const faqButtons = document.querySelectorAll('.faq-content-first-part button');
+    const faqContents = document.querySelectorAll('.faq-content-second-part');
 
-        // Add click event listeners to the buttons
-        faqButtons.forEach((button, index) => {
-            button.addEventListener('click', () => {
-                // Toggle the 'faq-active' class for the clicked content element
-                faqContents[index].classList.toggle('faq-active');
+    // Add click event listeners to the buttons
+    faqButtons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            // Toggle the 'faq-active' class for the clicked content element
+            const clickedContent = faqContents[index];
+            clickedContent.classList.toggle('faq-active');
 
-                // Change the image src of all buttons to 'img/arrowdown.svg'
-                faqButtons.forEach((btn) => {
-                    const img = btn.querySelector('img');
-                    if (img) {
-                        img.setAttribute('src', 'img/arrowdown.svg');
-                    }
-                });
-
-                // Change the image src of the clicked button to 'img/arrowup.svg'
-                const img = button.querySelector('img');
-                if (img) {
-                    if (img.getAttribute('src') === 'img/arrowup.svg') {
-                        img.setAttribute('src', 'img/arrowdown.svg');
-                    } else {
-                        img.setAttribute('src', 'img/arrowup.svg');
-                    }
+            // Loop through all content elements to remove 'faq-active' class from others
+            faqContents.forEach((content, i) => {
+                if (i !== index) {
+                    content.classList.remove('faq-active');
                 }
             });
+
+            // Change the image src of all buttons to 'img/arrowdown.svg'
+            faqButtons.forEach((btn) => {
+                const img = btn.querySelector('img');
+                if (img) {
+                    img.setAttribute('src', 'img/arrowdown.svg');
+                }
+            });
+
+            // Change the image src of the clicked button to 'img/arrowup.svg'
+            const img = button.querySelector('img');
+            if (img) {
+                if (img.getAttribute('src') === 'img/arrowup.svg') {
+                    img.setAttribute('src', 'img/arrowdown.svg');
+                } else {
+                    img.setAttribute('src', 'img/arrowup.svg');
+                }
+            }
         });
-    </script>
+    });
+</script>
+
 
 
     <script src="js/main.js"></script>
