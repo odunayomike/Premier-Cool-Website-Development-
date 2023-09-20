@@ -316,6 +316,9 @@ footer {
   font-weight: 400;
   line-height: normal;
 }
+.footer-logo img {
+  width: 100px;
+}
 .footer-border {
   border-bottom: 1px solid #fff;
   margin-top: 40px;
