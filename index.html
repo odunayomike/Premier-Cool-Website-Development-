@@ -1,388 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/logo.svg" type="image/x-icon">
 
-    <title>Premier Cool</title>
-  </head>
-  <body>
-    <style>
-      @media screen and (min-width: 1024px) {
-        .col iframe {
-            margin-left: 60px;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/logo.svg" type="image/x-icon">
+
+  <title>Premier Cool</title>
+</head>
+
+<body>
+  <style>
+    @media screen and (min-width: 1024px) {
+      .col iframe {
+        margin-left: 60px;
       }
-    </style>
-    <nav class="navbar bg-body-tertiary" id="sticky-navbar">
-      <div class="container"> 
-        <a class="navbar-brand" href="#">
-          <img src="img/logo.svg" alt="Bootstrap" width="80" height="" />
-        </a>
-        <div class="myNavbar">
-          <a href="" class="active">Home</a>
-          <a href="./product.html">Product</a>
-          <a href="./imd.html">IMD</a>
-          <a href="./about.html">About</a>
-          <a href="./contact.html">Contact</a>
-        </div>
-        <div class="search">
+    }
+  </style>
+  <nav class="navbar bg-body-tertiary" id="sticky-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.svg" alt="Bootstrap" width="80" height="" />
+      </a>
+      <div class="myNavbar">
+        <a href="" class="active">Home</a>
+        <a href="./product.html">Product</a>
+        <a href="./imd.html">IMD</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+      <div class="search">
+        <i class="bi bi-search"></i>
+        <input class="" type="search" placeholder="Search" aria-label="Search" />
+      </div>
+
+      <div class="mobile-menu-btn">
+        <button>
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+
+
+    <div style="max-width: 100%; width: inherit;" class="mobile-search mobile-menu-off">
+      <div>
+        <form class="mobile-search-form" action="">
           <i class="bi bi-search"></i>
-          <input
-            class=""
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-        </div>
-
-        <div class="mobile-menu-btn">
-          <button>
-            <i class="bi bi-list"></i>
-          </button>
-        </div>
-      </div>
-
-      
-        <div style="max-width: 100%; width: inherit;"  class="mobile-search mobile-menu-off">
-          <div>
-            <form class="mobile-search-form" action="">
-              <i class="bi bi-search"></i>
-              <input
-                class=""
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-            </form>
-          </div>
-          <div class="mobile-menu-close">
-            <button>
-              <i class="bi bi-x-lg"></i>
-            </button>
-          </div>
-        </div>
-        <div style="margin-top: 20px;" class="mobile-menu mobile-menu-off">
-          <a class="active" href="./">Home</a>
-          <a href="./product.html">Product</a>
-          <a href="./imd.html">IMD</a>
-          <a href="./about.html">About Us</a>
-          <a href="./contact.html">Contact</a>
-        </div>
-      </div>
-    </nav>
-    <div class="img-silder">
-      <div class="header-text">
-        <h1>Welcome to Premier cool's website</h1>
-        <p>
-          Premier is Nigeria’s No.1 family bar soap. The brand has very strong
-          heritage and is trusted by millions of Nigerians.
-        </p>
-      </div>
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide mySlide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active myCarousel">
-            <img src="img/slider1.png" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item myCarousel">
-            <img src="img/slider1.png" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item myCarousel">
-            <img src="img/slider1.png" class="d-block w-100" alt="..." />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev myPrev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next myNext"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    <div class="content-section">
-      <p>
-        In 2010, Premier extended its strong equity to the hygiene segment with
-        the launch of Premier Cool Deo soap that delivers all day freshness and
-        confidence. Premier Cool Deo contains real menthol extracts that give
-        you that icy-cool feel, a refreshing long-lasting fragrance and an
-        antibacterial ingredient that helps preserve your freshness all day
-        long. In 2022, we launched the Premier Cool Back Soap. An embodiment of
-        our ever-evolving brand commitment, to redefine men's grooming and
-        self-care habits.
-      </p>
-      <div class="best-known">
-        <h1>Best Known for?</h1>
-        <p>
-          Forging a new type of masculinity where men feel comfortable and
-          confident on their journey to societal progress. The Premier Cool
-          grooming experience keeps you ready to make lasting impressions in
-          every aspect of your life.
-        </p>
-      </div>
-    </div>
-    <div class="row qualities">
-      <div class="col-6 col-sm-3">
-        <div class="safe">
-          <img src="img/shield.svg" alt="" />
-          <h1>100% Safe</h1>
-          <p>
-            Premier Cool soap is a good choice for people who want a soap that
-            will keep them feeling cool and fresh all day long.
-          </p>
-        </div>
-      </div>
-      <div class="col-6 col-sm-3">
-        <div class="safe">
-          <img src="img/skin.svg" alt="" />
-          <h1>All Skin Type</h1>
-          <p>
-            Premier Cool soap is generally really considered to be safe for most skin types.
-          </p>
-        </div>
-      </div>
-      <div class="col-6 col-sm-3">
-        <div class="safe">
-          <img src="img/leaf.svg" alt="" />
-          <h1>All Skin Type</h1>
-          <p>
-            Premier Cool soap is made with a variety of natural ingredients
-          </p>
-        </div>
-      </div>
-      <div class="col-6 col-sm-3">
-        <div class="safe">
-          <img src="img/fresh.svg" alt="" />
-          <h1>Stay Fresh</h1>
-          <p>
-            This soap contains Menthol with Freezethol technology. This also enhances your skin to be healthy
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="soapslider">
-      <img src="img/Vector.svg" alt="" />
-      <div class="row soapslider-inner active">
-        <div class="col">
-          <div class="col-12 soapslide">
-            <img src="img/yellowsoap.svg" alt="" />
-          </div>
-        </div>
-        <div class="col">
-          <div class="col-12 soapslide-text">
-            <h1>Premier Cool Sport</h1>
-            <p>
-              A blend of Menthol and Caffeine, specially formulated to give you
-              that burst of energy to kick start your day, and give you 25HR
-              freshness and confidence
-            </p>
-            <button>Explore More <i class="bi bi-arrow-right"></i></button>
-          </div>
-        </div>
-      </div>
-      <div class="row soapslider-inner">
-        <div class="col">
-          <div class="col-12 soapslide">
-            <img src="img/bluesoap.svg" alt="" />
-          </div>
-        </div>
-        <div class="col">
-          <div class="col-12 soapslide-text">
-            <h1>Premier Cool Ultimate</h1>
-            <p>
-              Premier Cool Ultimate is an antibacterial soap formulated with the
-              special Freezethol technology, making it 120x cooler, which
-              provides an icy cool bath every time. With 25HR freshness, your
-              skin will remain moisturized and protected from germs and
-              disease-causing bacteria.
-            </p>
-            <button>Explore More <i class="bi bi-arrow-right"></i></button>
-          </div>
-        </div>
-      </div>
-      <div class="row soapslider-inner">
-        <div class="col">
-          <div class="col-12 soapslide">
-            <img src="img/black.svg" alt="" />
-          </div>
-        </div>
-        <div class="col">
-          <div class="col-12 soapslide-text">
-            <h1>Premier Cool Black</h1>
-            <p>
-              A unique mix of African roots and modern technology; Honey,
-              Camwood, Aloe Vera, Sheabutter and Essential Oils. The result is
-              an ultra bath experience for your skin that delivers 3X more
-              moisture, giving you 25HR freshness and confidence.
-            </p>
-            <button>Explore More <i class="bi bi-arrow-right"></i></button>
-          </div>
-        </div>
-      </div>
-      <div class="row soapslider-inner">
-        <div class="col">
-          <div class="col-12 soapslide">
-            <img src="img/redsoap.svg" alt="" />
-          </div>
-        </div>
-        <div class="col">
-          <div class="col-12 soapslide-text">
-            <h1>Premier Cool Odour Defence</h1>
-            <p>
-              Formulated with Menthol and Deo-plus to eliminate odour causing
-              bacteria on the skin. Premier Cool Odour Defence not only protects
-              you from germs and disease causing bacteria but also gives you
-              25HR freshness, by preventing sweat from clogging up your pores.
-            </p>
-            <button>Explore More <i class="bi bi-arrow-right"></i></button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="dot-indicator">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-
-    <div class="container unite-world">
-      <div class="row">
-        <div class="col">
-          <div class="col-12">
-            <h1>A World United with our Premier Cool Black Soap</h1>
-            <p>
-              A bar soap filled with natural ingredients like honey, sheabutter,
-              camwood, and essential oils to deliver 3x more moisturization. Say
-              no to dry skin and switch to Premier Cool Black Soap for a
-              renewed skin feel.
-            </p>
-          </div>
-        </div>
-        <div class="col home-video">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/zW013jFJGMo?si=M3aukctm7e42cdPg"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </div>
-
-    <div class="newsletter">
-      <div class="row newsletter-inner">
-        <div class="col col-news-inner" style="max-width: 15%">
-          <div class="col-12">
-            <img src="img/mailbox.svg" alt="" />
-          </div>
-        </div>
-        <div class="col newsletter-text">
-          <p>Join Our Newsletter</p>
-          <span
-            >Join the Premier Cool family! The best way to keep in touch with
-            our products and latest news.</span
-          >
-        </div>
-        <form class="newsletter-form" action="">
-          <input
-            type="email"
-            class=""
-            style="width: 87%"
-            placeholder="Enter your email "
-          />
-          <input type="button" value="Subscribe" />
+          <input class="" type="search" placeholder="Search" aria-label="Search" />
         </form>
       </div>
+      <div class="mobile-menu-close">
+        <button>
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
     </div>
-    <footer>
-      <div class="row footer">
-        <div class="col col-6 first-footer-sec" style="">
-          <div class="footer-logo" style="">
-            <img src="img/logo.svg" alt="" />
-            <p>
-              45/47, Town Planning Way, Ilupeju Industrial Estate, P. M. B.
-              21132, Ikeja, Lagos
-            </p>
-          </div>
+    <div style="margin-top: 20px;" class="mobile-menu mobile-menu-off">
+      <a class="active" href="./">Home</a>
+      <a href="./product.html">Product</a>
+      <a href="./imd.html">IMD</a>
+      <a href="./about.html">About Us</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    </div>
+  </nav>
+  <div class="img-silder">
+    <div class="header-text">
+      <h1>Welcome to Premier cool's website</h1>
+      <p>
+        Premier is Nigeria’s No.1 family bar soap. The brand has very strong
+        heritage and is trusted by millions of Nigerians.
+      </p>
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide mySlide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active myCarousel">
+          <img src="img/slider1.png" class="d-block w-100" alt="..." />
         </div>
-        <div class="col-4 col-sm-2 footer-mobile">
-          <h3>Socials</h3>
-          <p>Facebook</p>
-          <p>Instagram</p>
-          <p>Youtube</p>
-          <p>X</p>
+        <div class="carousel-item myCarousel">
+          <img src="img/slider1.png" class="d-block w-100" alt="..." />
         </div>
-        <div class="col-4 col-sm-2 footer-mobile">
-          <h3>Products</h3>
-          <p>Ultimate</p>
-          <p>Black</p>
-          <p>Odour Defence</p>
-          <p>Sport</p>
-        </div>
-        <div class="col-4 col-sm-2 footer-mobile">
-          <h3>Legal</h3>
-          <p>Terms</p>
-          <p>Privacy</p>
-          <p>Contact Us</p>
+        <div class="carousel-item myCarousel">
+          <img src="img/slider1.png" class="d-block w-100" alt="..." />
         </div>
       </div>
-      <div class="footer-border"></div>
-      <div class="footer-copyright">
-        <div class="row footer-copy-row">
-          <div class="col col-6  footer-copy-text">
-            <p>@2023 Premier Cool. All rights reserved.</p>
-          </div>
-          <div class="col col-6 page-logo">
-            <span><i class="bi bi-facebook"></i></span>
-            <span><i class="bi bi-twitter"></i></span>
-            <span><i class="bi bi-instagram"></i></span>
-            <span><i class="bi bi-youtube"></i></span>
-          </div>
+      <button class="carousel-control-prev myPrev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next myNext" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="content-section">
+    <p>
+      In 2010, Premier extended its strong equity to the hygiene segment with
+      the launch of Premier Cool Deo soap that delivers all day freshness and
+      confidence. Premier Cool Deo contains real menthol extracts that give
+      you that icy-cool feel, a refreshing long-lasting fragrance and an
+      antibacterial ingredient that helps preserve your freshness all day
+      long. In 2022, we launched the Premier Cool Back Soap. An embodiment of
+      our ever-evolving brand commitment, to redefine men's grooming and
+      self-care habits.
+    </p>
+    <div class="best-known">
+      <h1>Best Known for?</h1>
+      <p>
+        Forging a new type of masculinity where men feel comfortable and
+        confident on their journey to societal progress. The Premier Cool
+        grooming experience keeps you ready to make lasting impressions in
+        every aspect of your life.
+      </p>
+    </div>
+  </div>
+  <div class="row qualities">
+    <div class="col-6 col-sm-3">
+      <div class="safe">
+        <img src="img/shield.svg" alt="" />
+        <h1>100% Safe</h1>
+        <p>
+          Premier Cool soap is a good choice for people who want a soap that
+          will keep them feeling cool and fresh all day long.
+        </p>
+      </div>
+    </div>
+    <div class="col-6 col-sm-3">
+      <div class="safe">
+        <img src="img/skin.svg" alt="" />
+        <h1>All Skin Type</h1>
+        <p>
+          Premier Cool soap is generally really considered to be safe for most skin types.
+        </p>
+      </div>
+    </div>
+    <div class="col-6 col-sm-3">
+      <div class="safe">
+        <img src="img/leaf.svg" alt="" />
+        <h1>All Skin Type</h1>
+        <p>
+          Premier Cool soap is made with a variety of natural ingredients
+        </p>
+      </div>
+    </div>
+    <div class="col-6 col-sm-3">
+      <div class="safe">
+        <img src="img/fresh.svg" alt="" />
+        <h1>Stay Fresh</h1>
+        <p>
+          This soap contains Menthol with Freezethol technology. This also enhances your skin to be healthy
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="soapslider">
+    <img src="img/Vector.svg" alt="" />
+    <div class="row soapslider-inner active">
+      <div class="col">
+        <div class="col-12 soapslide">
+          <img src="img/yellowsoap.svg" alt="" />
         </div>
       </div>
-    </footer>
-    <script src="js/main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <div class="col">
+        <div class="col-12 soapslide-text">
+          <h1>Premier Cool Sport</h1>
+          <p>
+            A blend of Menthol and Caffeine, specially formulated to give you
+            that burst of energy to kick start your day, and give you 25HR
+            freshness and confidence
+          </p>
+          <button>Explore More <i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="row soapslider-inner">
+      <div class="col">
+        <div class="col-12 soapslide">
+          <img src="img/bluesoap.svg" alt="" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="col-12 soapslide-text">
+          <h1>Premier Cool Ultimate</h1>
+          <p>
+            Premier Cool Ultimate is an antibacterial soap formulated with the
+            special Freezethol technology, making it 120x cooler, which
+            provides an icy cool bath every time. With 25HR freshness, your
+            skin will remain moisturized and protected from germs and
+            disease-causing bacteria.
+          </p>
+          <button>Explore More <i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="row soapslider-inner">
+      <div class="col">
+        <div class="col-12 soapslide">
+          <img src="img/black.svg" alt="" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="col-12 soapslide-text">
+          <h1>Premier Cool Black</h1>
+          <p>
+            A unique mix of African roots and modern technology; Honey,
+            Camwood, Aloe Vera, Sheabutter and Essential Oils. The result is
+            an ultra bath experience for your skin that delivers 3X more
+            moisture, giving you 25HR freshness and confidence.
+          </p>
+          <button>Explore More <i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="row soapslider-inner">
+      <div class="col">
+        <div class="col-12 soapslide">
+          <img src="img/redsoap.svg" alt="" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="col-12 soapslide-text">
+          <h1>Premier Cool Odour Defence</h1>
+          <p>
+            Formulated with Menthol and Deo-plus to eliminate odour causing
+            bacteria on the skin. Premier Cool Odour Defence not only protects
+            you from germs and disease causing bacteria but also gives you
+            25HR freshness, by preventing sweat from clogging up your pores.
+          </p>
+          <button>Explore More <i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dot-indicator">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <div class="container unite-world">
+    <div class="row">
+      <div class="col">
+        <div class="col-12">
+          <h1>A World United with our Premier Cool Black Soap</h1>
+          <p>
+            A bar soap filled with natural ingredients like honey, sheabutter,
+            camwood, and essential oils to deliver 3x more moisturization. Say
+            no to dry skin and switch to Premier Cool Black Soap for a
+            renewed skin feel.
+          </p>
+        </div>
+      </div>
+      <div class="col home-video">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/anWHswx-gMU?si=eTHF_Y8fJO5VLWpG&amp;controls=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="newsletter">
+    <div class="row newsletter-inner">
+      <div class="col col-news-inner" style="max-width: 15%">
+        <div class="col-12">
+          <img src="img/mailbox.svg" alt="" />
+        </div>
+      </div>
+      <div class="col newsletter-text">
+        <p>Join Our Newsletter</p>
+        <span>Join the Premier Cool family! The best way to keep in touch with
+          our products and latest news.</span>
+      </div>
+      <form class="newsletter-form" action="">
+        <input type="email" class="" style="width: 87%" placeholder="Enter your email " />
+        <input type="button" value="Subscribe" />
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="row footer">
+      <div class="col col-6 first-footer-sec" style="">
+        <div class="footer-logo" style="">
+          <img src="img/logo.svg" alt="" />
+          <p>
+            45/47, Town Planning Way, Ilupeju Industrial Estate, P. M. B.
+            21132, Ikeja, Lagos
+          </p>
+        </div>
+      </div>
+      <div class="col-4 col-sm-2 footer-mobile">
+        <h3>Socials</h3>
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Youtube</p>
+        <p>X</p>
+      </div>
+      <div class="col-4 col-sm-2 footer-mobile">
+        <h3>Products</h3>
+        <p>Ultimate</p>
+        <p>Black</p>
+        <p>Odour Defence</p>
+        <p>Sport</p>
+      </div>
+      <div class="col-4 col-sm-2 footer-mobile">
+        <h3>Legal</h3>
+        <p>Terms</p>
+        <p>Privacy</p>
+        <p>Contact Us</p>
+      </div>
+    </div>
+    <div class="footer-border"></div>
+    <div class="footer-copyright">
+      <div class="row footer-copy-row">
+        <div class="col col-6  footer-copy-text">
+          <p>@2023 Premier Cool. All rights reserved.</p>
+        </div>
+        <div class="col col-6 page-logo">
+          <span><i class="bi bi-facebook"></i></span>
+          <span><i class="bi bi-twitter"></i></span>
+          <span><i class="bi bi-instagram"></i></span>
+          <span><i class="bi bi-youtube"></i></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
