@@ -593,7 +593,7 @@ iframe {
   z-index: 2;
 }
 .product-banner {
-  position: relative; 
+  position: relative;
   display: inline-block;
   width: 100%;
 }
@@ -1180,6 +1180,14 @@ li[data-pos="2"]::after {
   body {
     max-width: 100% !important;
     overflow-x: hidden !important;
+  }
+  .soap-prev {
+    border-radius: 12px;
+    border: 1px solid #d4d4d4;
+    background: #fff;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
   }
   .soap-thumbnail {
     display: flex;
