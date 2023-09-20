@@ -593,8 +593,9 @@ iframe {
   z-index: 2;
 }
 .product-banner {
-  position: relative; /* Required for positioning the pseudo-element */
+  position: relative; 
   display: inline-block;
+  width: 100%;
 }
 .product-banner::before {
   content: ""; /* Required for the pseudo-element to be generated */
@@ -1071,10 +1072,128 @@ li[data-pos="2"]::after {
 .safe img {
   margin-bottom: 15px;
 }
+
+.return-arrow {
+  margin-top: 100px;
+}
+.return-arrow button {
+  border: none;
+  background: transparent;
+}
+.return-arrow button a {
+  text-decoration: none;
+  color: #000;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.return-arrow button a p {
+  margin-left: 15px;
+}
+.return-arrow button a p i {
+  font-size: 20px;
+}
+.soap-prev {
+  border-radius: 12px;
+  border: 1px solid #d4d4d4;
+  background: #fff;
+  padding: 50px 50px 20px 50px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.soap-prev button {
+  border: none;
+  background: none;
+  width: fit-content;
+}
+.soap-thumbnail img {
+  border-radius: 12px;
+  border: 1px solid #5369c2;
+  background: #eef1ff;
+  width: 100px;
+  height: 80px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.soap-thumbnail {
+  display: flex;
+
+  flex-direction: column;
+}
+.main-soap-prev-img {
+  margin-top: 30px;
+}
+.soap-feature {
+  display: flex;
+  margin-bottom: 10px;
+}
+.soap-feature p {
+  margin-top: 13px;
+  margin-left: 15px;
+  color: #000;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.soap-feature img {
+  background: #eef1ff;
+  padding: 10px 10px;
+  border-radius: 100%;
+  object-fit: cover;
+  height: 50px;
+}
+.soap-details button {
+  padding: 15px 15px;
+  width: 100%;
+  border-radius: 28px;
+  background: #273e9b;
+  border-radius: 25px;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 20px;
+}
+.soap-details h1 {
+  color: #273e9b;
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.soap-details p {
+  color: #000;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
 @media screen and (max-width: 940px) {
   body {
     max-width: 100% !important;
     overflow-x: hidden !important;
+  }
+  .soap-thumbnail {
+    display: flex;
+    flex-direction: row;
+  }
+  .soap-thumbnail img {
+    border-radius: 12px;
+    border: 1px solid #5369c2;
+    background: #eef1ff;
+    width: 100px;
+    height: 80px;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
   }
   .blue-soap-inner-inner {
     margin-left: 0;
@@ -1302,7 +1421,7 @@ li[data-pos="2"]::after {
   }
   .safe {
     height: 215px;
-    text-align: center !important; 
+    text-align: center !important;
   }
   .col-sm-3 {
     margin-bottom: 20px;
