@@ -1181,6 +1181,9 @@ li[data-pos="2"]::after {
     max-width: 100% !important;
     overflow-x: hidden !important;
   }
+  .return-arrow {
+    margin-top: 30px;
+  }
   .soap-details h1 {
     color: #273e9b;
     font-family: Mulish;
@@ -1188,10 +1191,11 @@ li[data-pos="2"]::after {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    margin-top: 15px;
   }
   .soap-details p {
     color: #000;
-    text-align: center;
+    text-align: left;
     font-family: Mulish;
     font-size: 13px;
     font-style: normal;
