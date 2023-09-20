@@ -1300,6 +1300,9 @@ li[data-pos="2"]::after {
     font-weight: 700;
     line-height: normal;
   }
+  .safe {
+    height: 165px;
+  }
   .col-sm-3 {
     margin-bottom: 20px;
   }
