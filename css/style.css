@@ -1302,7 +1302,7 @@ li[data-pos="2"]::after {
   }
   .safe {
     height: 215px;
-    text-align: left;
+    text-align: center !important; 
   }
   .col-sm-3 {
     margin-bottom: 20px;
