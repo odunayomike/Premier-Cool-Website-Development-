@@ -1912,6 +1912,12 @@ li[data-pos="2"]::after {
     font-weight: 300;
     line-height: 20px; /* 153.846% */
   }
+  .soapslide img {
+    /* position: absolute; */
+    margin-top: -308px;
+    /* margin-left: 100px; */
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .mobile-menu-btn {
