@@ -722,7 +722,7 @@ li[data-pos="2"]::after {
   margin-right: 100px;
 }
 .blue-soap-inner-inner {
-  margin-top: -130px !important;
+  margin-top: -166px !important;
 }
 .blue-soap-inner h1 {
   color: #000;
@@ -1928,5 +1928,12 @@ li[data-pos="2"]::after {
   }
   .hashtag {
     margin-top: 50px;
+  }
+  .newsletter-form {
+    margin-top: -47px !important;
+    margin-left: 200px !important;
+  }
+  .newsletter-form input[type="email"] {
+    width: 60% !important;
   }
 }
