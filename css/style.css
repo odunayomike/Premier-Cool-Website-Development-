@@ -332,6 +332,11 @@ footer {
   font-size: 35px;
   padding: 0 6px;
 }
+.page-logo span svg {
+  font-size: 35px;
+  padding: 0 6px;
+  margin-top: 6px;
+}
 .page-logo {
   float: right;
   justify-content: right;
