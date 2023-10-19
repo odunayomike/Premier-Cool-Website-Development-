@@ -1923,6 +1923,13 @@ li[data-pos="2"]::after {
     /* margin-left: 100px; */
     width: 100%;
   }
+  .intro-text {
+    padding: 10px 10px !important;
+  }
+  .intro-text p {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
 }
 @media screen and (min-width: 1024px) {
   .mobile-menu-btn {
@@ -1947,4 +1954,13 @@ li[data-pos="2"]::after {
   .newsletter-form input[type="email"] {
     width: 60% !important;
   }
+}
+
+.intro-text {
+  padding: 50px 100px;
+}
+.intro-text p {
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
 }
