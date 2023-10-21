@@ -26,8 +26,6 @@ const myNavbar = document.querySelector(".myNavbar");
 const search = document.querySelector(".search");
 const mobile_search = document.querySelector(".mobile-search");
 
-
-
 mobile_menu_btn.addEventListener("click", () => {
   if (mobile_menu.classList.contains("mobile-menu-off")) {
     mobile_menu.classList.remove("mobile-menu-off");
@@ -46,7 +44,6 @@ mobile_menu_close.addEventListener("click", () => {
   navbar_brand.classList.remove("mobile-menu-off");
   myNavbar.classList.remove("mobile-menu-off");
   mobile_menu_btn.classList.remove("mobile-menu-off");
-  
 });
 
 const divItems = document.querySelectorAll(".soapslider-inner");
@@ -80,7 +77,7 @@ dots.forEach((dot, index) => {
 showDiv(currentIndex);
 setInterval(switchDivs, 5000);
 
-// IMG VIDEO CAROUSEL
+// IMD VIDEO CAROUSEL
 
 const scrollContainers = document.querySelectorAll("#infiniteScroll--left");
 
