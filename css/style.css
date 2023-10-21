@@ -1964,3 +1964,6 @@ li[data-pos="2"]::after {
   text-align: center;
   line-height: 35px;
 }
+.page-logo a {
+  color: #fff;
+}
